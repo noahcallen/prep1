@@ -1,0 +1,26 @@
+[
+  {
+    "sku": "ABC123",
+    "name": "Wireless Mouse",
+    "inStock": true,
+    "isOnSale": false,
+    "isNewArrival": true,
+    "isFeatured": false
+  },
+  {
+    "sku": "XYZ789",
+    "name": "Mechanical Keyboard",
+    "inStock": false,
+    "isOnSale": true,
+    "isNewArrival": false,
+    "isFeatured": true
+  },
+  {
+    "sku": "LMN456",
+    "name": "USB-C Hub",
+    "inStock": true,
+    "isOnSale": false,
+    "isNewArrival": false,
+    "isFeatured": true
+  }
+]

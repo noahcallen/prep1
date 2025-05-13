@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# React SKU Lookup Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React-based coding challenge for candidates to demonstrate their ability to work with component state, conditional rendering, and basic debugging.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📦 Installation
 
-### `npm start`
+1. Clone this repository:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   ```bash
+   git clone git@github.com:noahcallen/prep1.git
+   cd prep1
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install
+npm start
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+💼 Candidate Instructions
+Your task is to fix a simple React application that allows a user to look up a product by SKU.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🛠 What You Need to Do
+1. Fix the Boolean Display Logic
+The boolean values for product details are currently displayed incorrectly.
+Update the logic so that:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+true → displays as "Yes"
 
-### `npm run eject`
+false → displays as "No"
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Improve the Error Message
+When an invalid SKU is entered, the current error message is unclear.
+Replace it with a clearer, more user-friendly message that informs the user the SKU was not found.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Normalize the SKU Input
+Right now, SKUs must be entered in uppercase to be matched.
+Update the logic so that the SKU check works regardless of letter case (uppercase or lowercase input should still match).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Conditionally Render Product Details
+Product information is shown on page load, even when no product has been searched.
+Update the component so that product details are only displayed after a valid product is found.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

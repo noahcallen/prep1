@@ -3,13 +3,13 @@ import mockData from './mockData.json';
 
 function App() {
   const [skuInput, setSkuInput] = useState('');
-  const [product, setProduct] = useState(null);
+  const [product, setProduct] = useState('');
   const [error, setError] = useState('');
 
   const handleSearch = (e) => {
     e.preventDefault();
 
-    const foundProduct = mockData.find((item) => item.sku === skuInput); // 🔴 Missing .toUpperCase()
+    const foundProduct = mockData.find((item) => item.sku === skuInput); 
 
     if (foundProduct) {
       setProduct(foundProduct);

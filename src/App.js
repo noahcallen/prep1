@@ -16,7 +16,7 @@ function App() {
       setError('');
     } else {
       setProduct(null);
-      setError('Something went wrong'); // 🔴 Vague error
+      setError('Something went wrong');
     }
   };
 
@@ -34,9 +34,9 @@ function App() {
       </form>
 
       <div style={{ marginTop: '2rem' }}>
-        <p>Name: {product?.name}</p>         {/* 🔴 Should be conditional */}
+        <p>Name: {product?.name}</p>         
         <p>SKU: {product?.sku}</p>
-        <p>In Stock: {product ? (product.inStock ? 'No' : 'Yes') : ''}</p> {/* 🔴 Logic reversed */}
+        <p>In Stock: {product ? (product.inStock ? 'No' : 'Yes') : ''}</p> 
         <p>On Sale: {product ? (product.isOnSale ? 'No' : 'Yes') : ''}</p>
         <p>New Arrival: {product ? (product.isNewArrival ? 'No' : 'Yes') : ''}</p>
         <p>Featured: {product ? (product.isFeatured ? 'No' : 'Yes') : ''}</p>

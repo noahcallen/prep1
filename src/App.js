@@ -16,7 +16,7 @@ function App() {
       setError('');
     } else {
       setProduct(null);
-      setError('Something went wrong'); // 🔴 Vague error
+      setError('Something went wrong');
     }
   };
 
